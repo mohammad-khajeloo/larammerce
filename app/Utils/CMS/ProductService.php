@@ -15,6 +15,7 @@ use App\Models\Product;
 use App\Models\PStructureAttrKey;
 use App\Models\Setting;
 use App\Utils\CMS\Enums\CMSSettingKey;
+use App\Utils\FinancialManager\ConfigProvider;
 use Exception;
 use Illuminate\Support\Facades\DB;
 use stdClass;
@@ -24,7 +25,8 @@ class ProductService
     public static function getTollPercentage()
     {
         try {
-            return floatval(Setting::getCMSRecord(CMSSettingKey::TOLL_PERCENTAGE)->value);
+            $config = ConfigProvider::getConfig();
+            return floatval($config->toll_percentage);
         } catch (Exception $e) {
             return 3.0;
         }
@@ -33,7 +35,8 @@ class ProductService
     public static function getTaxPercentage()
     {
         try {
-            return floatval(Setting::getCMSRecord(CMSSettingKey::TAX_PERCENTAGE)->value);
+            $config = ConfigProvider::getConfig();
+            return floatval($config->tax_percentage);
         } catch (Exception $e) {
             return 6.0;
         }

@@ -5,7 +5,6 @@ namespace App\Utils\FinancialManager;
 use App\Utils\CMS\Exceptions\NotValidSettingRecordException;
 use App\Utils\CMS\Setting\FinancialDriver\FinancialDriverService;
 use App\Utils\FinancialManager\Exceptions\FinancialDriverInvalidConfigurationException;
-use App\Utils\FinancialManager\Models\BaseFinancialConfig;
 use App\Utils\Reflection\AnnotationBadKeyException;
 use App\Utils\Reflection\AnnotationBadScopeException;
 use App\Utils\Reflection\AnnotationNotFoundException;
@@ -24,8 +23,10 @@ class ConfigProvider
         return Factory::driver($driver_id)->getDefaultConfig();
     }
 
-    public static function getConfig(string $driver_id): BaseFinancialConfig
+    public static function getConfig(string $driver_id = null): BaseFinancialConfig
     {
+        if ($driver_id == null)
+            $driver_id = Provider::getEnabledDriver();
         if (count(self::$CACHED_DATA) == 0 or !array_key_exists($driver_id, self::$CACHED_DATA)) {
             $payment_driver_setting_record = FinancialDriverService::getRecord($driver_id);
             self::$CACHED_DATA[$driver_id] = $payment_driver_setting_record->getConfigModel();

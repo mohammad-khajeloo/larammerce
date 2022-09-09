@@ -2,7 +2,7 @@
 
 namespace App\Utils\FinancialManager\Drivers\Local;
 
-use App\Utils\FinancialManager\Models\BaseFinancialConfig;
+use App\Utils\FinancialManager\BaseFinancialConfig;
 
 class Config extends BaseFinancialConfig
 {

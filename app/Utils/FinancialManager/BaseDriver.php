@@ -11,7 +11,6 @@ namespace App\Utils\FinancialManager;
 
 use App\Models\Invoice;
 use App\Models\User;
-use App\Utils\FinancialManager\Models\BaseFinancialConfig;
 use App\Utils\FinancialManager\Models\Customer;
 use App\Utils\FinancialManager\Models\Product;
 

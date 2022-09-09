@@ -3,8 +3,8 @@
 namespace App\Utils\CMS\Setting\FinancialDriver;
 
 use App\Utils\CMS\Setting\AbstractSettingModel;
+use App\Utils\FinancialManager\BaseFinancialConfig;
 use App\Utils\FinancialManager\Kernel;
-use App\Utils\FinancialManager\Models\BaseFinancialConfig;
 use JetBrains\PhpStorm\ArrayShape;
 
 class FinancialDriverModel extends AbstractSettingModel
