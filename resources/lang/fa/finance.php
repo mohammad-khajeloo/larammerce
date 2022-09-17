@@ -18,7 +18,7 @@ return [
         "prefix" => "پیشوند آدرس",
         "is_manual_stock" => "امکان تنظیم دستی تعداد محصول موجود در انبار",
         "check_exit_tab_sms_notification" => "اطلاع به مشتریان از وضعیت خروج محصول از انبار",
-        "tax_added_to_price" => "اضافه شدن مالیات به قیمت محصول",
+        "tax_added_to_price" => "در قیمت‌های ثبت شده برای محصولات، مالیات محاسبه شده است",
         "tax_percentage" => "درصد مالیات",
         "toll_percentage" => "درصد عوارض",
         "calc_tax_for_normal_customers" => "برای خرید مشتریان حقیقی مالیات محاسبه شود",

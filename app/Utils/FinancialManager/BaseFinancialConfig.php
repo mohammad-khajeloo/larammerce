@@ -63,6 +63,10 @@ abstract class BaseFinancialConfig extends BaseModel implements JsonSerializable
 
     public function __construct()
     {
+        $this->setDefaults();
+    }
+
+    private function setDefaults(){
         $this->is_enabled = false;
         $this->is_manual_stock = false;
         $this->check_exit_tab_sms_notification = true;
@@ -80,6 +84,7 @@ abstract class BaseFinancialConfig extends BaseModel implements JsonSerializable
 
     public function unserialize(string $data): void
     {
+        $this->setDefaults();
         $tmp_data = json_decode($data, true);
         foreach ($tmp_data as $key => $value) {
             $this->$key = $value;
