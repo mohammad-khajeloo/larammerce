@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="/admin_dashboard/vendor/bootstrap/dist/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="/admin_dashboard/vendor/bootstrap-rtl/dist/css/bootstrap-rtl.min.css"/>
     <link rel="stylesheet" href="/admin_dashboard/vendor/font-awesome/css/font-awesome.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/admin_dashboard/css/app-23-07-18r3.css"/>
+    <link rel="stylesheet" type="text/css" href="/admin_dashboard/css/app-22-11-27.css"/>
 </head>
 <body class="page-reports">
 <header class="bs-docs-nav navbar navbar-static-top" id="top">
@@ -31,10 +31,9 @@
     </div>
 </header>
 <script>window.PAGE_ID = "admin.pages.live-reports.index";</script>
-<div class="container-fluid numeric-reports">
+<div class="container numeric-reports">
     <div class="row">
         @include("admin.pages.live-reports._live_numeric_data", ["id" => "daily-sales-amount", "title" => "فروش امروز"])
-        @include("admin.pages.live-reports._live_numeric_data", ["id" => "yesterday-sales-amount", "title" => "فروش روز گذشته"])
         @include("admin.pages.live-reports._live_numeric_data", ["id" => "monthly-sales-amount", "title" => "فروش ماه جاری"])
         @include("admin.pages.live-reports._live_numeric_data", ["id" => "yearly-sales-amount", "title" => "فروش سال جاری"])
         @include("admin.pages.live-reports._live_numeric_data", ["id" => "previous-year-sales-amount", "title" => "فروش سال گذشته", "is_live" => false])
@@ -85,6 +84,6 @@
 </div>
 
 @include("admin.templates.underscore_needle")
-<script data-main="/admin_dashboard/js/all-23-07-18r3" src="/admin_dashboard/vendor/requirejs/require.js"></script>
+<script data-main="/admin_dashboard/js/all-22-11-27" src="/admin_dashboard/vendor/requirejs/require.js"></script>
 </body>
 </html>

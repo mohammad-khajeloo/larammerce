@@ -2,7 +2,7 @@
 <html lang="fa">
 <head>
     <title>{{get_identity()["title"]}}</title>
-    <meta name="generator" content="larammerce"/>
+    <meta name="generator" content="abzarmonlmahdi"/>
     @yield('extra_style')
     <link rel="stylesheet" href="/admin_dashboard/vendor/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/admin_dashboard/vendor/font-awesome/css/font-awesome.min.css"/>
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/admin_dashboard/vendor/jquery-ui/jquery-ui.css">
     <link rel="stylesheet" href="/admin_dashboard/vendor/persianDatepicker/css/persian-datepicker.min.css">
     <link rel="stylesheet" href="/admin_dashboard/vendor/jquery-toast/jquery.toast.min.css">
-    <link rel="stylesheet" type="text/css" href="/admin_dashboard/css/app-23-07-18r3.css"/>
+    <link rel="stylesheet" type="text/css" href="/admin_dashboard/css/app-22-11-27.css"/>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/admin_dashboard/{{get_identity()["fav"]}}/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/admin_dashboard/{{get_identity()["fav"]}}/favicon-32x32.png">
@@ -19,8 +19,8 @@
     <link rel="manifest" href="/admin_dashboard/{{get_identity()["fav"]}}/site.webmanifest">
     <link rel="mask-icon" href="/admin_dashboard/{{get_identity()["fav"]}}/safari-pinned-tab.svg" color="#ff2e20">
     <link rel="shortcut icon" href="/admin_dashboard/{{get_identity()["fav"]}}/favicon.ico">
-    <meta name="apple-mobile-web-app-title" content="Larammerce">
-    <meta name="application-name" content="Larammerce">
+    <meta name="apple-mobile-web-app-title" content="abzarmonlmahdi">
+    <meta name="application-name" content="abzarmonlmahdi">
     <meta name="msapplication-TileColor" content="#ff2e20">
     <meta name="msapplication-config" content="/admin_dashboard/{{get_identity()["fav"]}}/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
@@ -164,7 +164,7 @@
     </div>
 </div>
 
-<script data-main="/admin_dashboard/js/all-23-07-18r3" src="/admin_dashboard/vendor/requirejs/require.js"></script>
+<script data-main="/admin_dashboard/js/all-22-11-27" src="/admin_dashboard/vendor/requirejs/require.js"></script>
 
 @yield('extra_javascript')
 

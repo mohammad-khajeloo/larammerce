@@ -2,7 +2,7 @@
 <html lang="fa">
 <head>
     <title>{{get_identity()["title"]}}</title>
-    <meta name="generator" content="larammerce"/>
+    <meta name="generator" content="abzarmonlmahdi"/>
     @yield('extra_style')
 
     <link rel="stylesheet" href="/admin_dashboard/vendor/bootstrap/dist/css/bootstrap.min.css"/>
